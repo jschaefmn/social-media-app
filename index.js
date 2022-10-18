@@ -11,7 +11,7 @@ const authRoute = require('./routes/auth');
 dotenv.config();
 
 mongoose.connect(
-  process.env.MONGO_URI || 'mongod://localhost:27017/Cluster0',
+  process.env.MONGO_URI || 'mongod://localhost:27017/Social',
   { useNewUrlParser: true},
   () => {
     console.log('Connected to MongoDB');
