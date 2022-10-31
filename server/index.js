@@ -11,13 +11,9 @@ const postRoute = require('./routes/post');
 
 dotenv.config();
 
-mongoose.connect(
-  process.env.MONGO_URI || 'mongod://localhost:27017/Social',
-  { useNewUrlParser: true},
-  () => {
-    console.log('Connected to MongoDB');
-  }
-);
+mongoose.connect(process.env.MONGO_URI || 'mongod://localhost:27017/Social', { useNewUrlParser: true }, () => {
+  console.log('Connected to MongoDB');
+});
 
 // Middleware
 app.use(express.json());
