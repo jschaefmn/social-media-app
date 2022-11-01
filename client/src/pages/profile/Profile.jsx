@@ -18,14 +18,17 @@ export default function Profile() {
               <img className='profileCoverImg' src={`${PF}post/3.jpeg`} alt='' />
               <img className='profileUserImg' src={`${PF}person/7.jpeg`} alt='' />
             </div>
-            <div className="profileInfo">
+            <div className='profileInfo'>
               <h4 className='profileInfoName'>Jake Schaefbauer</h4>
-              <span className='profileInfoDesc'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates neque non, autem ut enim sunt ea et porro? Veritatis autem quae cupiditate tempora obcaecati aliquid totam minus, consequatur nisi modi?</span>
+              <span className='profileInfoDesc'>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates neque non, autem ut enim sunt ea et
+                porro? Veritatis autem quae cupiditate tempora obcaecati aliquid totam minus, consequatur nisi modi?
+              </span>
             </div>
           </div>
           <div className='profileRightBottom'>
-            <Feed />
-            <Rightbar profile/>
+            <Feed username='test' />
+            <Rightbar profile />
           </div>
         </div>
       </div>
